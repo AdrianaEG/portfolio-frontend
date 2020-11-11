@@ -1,0 +1,15 @@
+.menu-left{
+    position: fixed;
+    width: 3rem;
+    bottom: 50vh;
+}
+
+.menu-left div{
+    border: solid red 0.5px;
+    margin: 0.3rem 0;
+}
+
+.icon{
+    width: 3rem;
+}
+
