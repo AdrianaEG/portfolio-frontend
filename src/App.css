@@ -1,3 +1,20 @@
+/*
+FONDO: #323239
+Rosita: #fdb2b7
+Letras grises: #57585d
+Letras blancas: #f8f7f5
+Linea gris: #747579
+*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5e5e6a;
+}
+
+
 .content{
     display: flex;
     flex-direction: row;
@@ -6,4 +23,5 @@
 .main{
     position: relative;
     left: 4rem;
+    /*width: 90vw;*/
 }
