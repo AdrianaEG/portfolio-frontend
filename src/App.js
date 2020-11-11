@@ -13,8 +13,7 @@ function App() {
       <Header />
       <div className="main">
         <Index />
-        <About />
-        <Projects />
+        
       </div>
       
     </div>

@@ -1,15 +1,15 @@
 .content-index{
     background: #323239;
     padding: 30px;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 0;
     border-radius: 35px;
     border: solid 2px #f8f7f5;
-    width: 70vw;
+    width: 100%;
 }
 
 .img-profile{
     border-radius: 100%;
-    width: 10rem;
+    width: 35vw;
 }
 
 .title-image{
@@ -17,21 +17,99 @@
     flex-direction: row;
 }
 
+.title{
+    color: #f8f7f5;
+}
+
 .description{
     display: flex;
 }
 
-.separator{
+.line{
     width: 0.2rem;
-    height: 4rem;
+    height: 7.8rem;
     margin-right: 1rem;
     background-color: #747579;
 }
 
+.name{
+    color: #fdb2b7;
+    line-height: 1rem;
+}
+
+.job{
+    line-height: 0rem;
+    color: #f8f7f5;
+}
+
+.location{
+    display: flex;
+    line-height: 0rem;
+}
+
+.location img{
+    width: 1.5rem;
+}
+
+.location p{
+    font-style: italic;
+    color: #f8f7f5;
+    font-size: 0.8rem;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills div{
+    text-align: center;
+    border: solid;
+    border-radius: 50px;
+    width: 60px;
+    background-color: #000000;
+    margin: 3px;
+}
+
+.skills div img{
+    width: 3rem;
+}
+
+.skills div p{
+    line-height: 0;
+    margin-top: 0.3rem;
+    color: #f8f7f5;
+}
+
 button{
-    border: none;
+    border: solid #f8f7f5;
     background: #fdb2b7;
-    margin-left: 1rem;
     border-radius: 100px;
-    padding: 10px;
+    padding: 10px 30px;
+    display: block;
+    margin: 1rem auto;
+    font-weight: bold;
+}
+
+button i{
+    margin-right: 10px;
+}
+
+.redes div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes div a{
+    text-decoration: none;
+    color: #f8f7f5;
+    margin: 0 5px;
+    background: radial-gradient(black, transparent);
+}
+
+.redes div img{
+    width: 1.5rem;
 }
