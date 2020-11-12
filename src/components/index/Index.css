@@ -78,6 +78,7 @@ button{
     display: block;
     margin: 1rem auto;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 button i{
