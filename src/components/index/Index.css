@@ -1,11 +1,4 @@
-.content-index{
-    background: #323239;
-    padding: 30px;
-    margin: 5px 0;
-    border-radius: 35px;
-    border: solid 2px #f8f7f5;
-    width: 100%;
-}
+
 
 .img-profile{
     border-radius: 100%;
@@ -19,6 +12,7 @@
 
 .title{
     color: #f8f7f5;
+    text-align: center;
 }
 
 .description{

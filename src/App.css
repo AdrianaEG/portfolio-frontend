@@ -26,3 +26,12 @@ body{
     margin-left: 4rem;
     width: 70%;
 }
+
+.card{
+    background: #323239;
+    padding: 30px;
+    margin: 5px 0;
+    border-radius: 35px;
+    border: solid 2px #f8f7f5;
+    width: 100%;
+}

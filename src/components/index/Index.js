@@ -2,7 +2,7 @@ import React from 'react';
 import './Index.css';
 function Index(){
     return(
-        <div className="content-index">
+        <div className="card" id="index">
             <div className="title-image">
                 <img src="https://avatars0.githubusercontent.com/u/45184284?s=460&u=9071a18c4b8368e15581a3287eab0e551aab3af6&v=4" alt="imagen de perfil" className="img-profile"></img>
                 <h1 className="title">Hello World!</h1>
