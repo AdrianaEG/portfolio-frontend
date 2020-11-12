@@ -20,35 +20,14 @@ function Index(){
             </div>
             
             <div className="skills">
-                <div>
-                    <img src="https://img.icons8.com/dusk/64/000000/html-5.png"/>
-                    <p>Html5</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/dusk/64/000000/css3.png"/>
-                    <p>CSS3</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/dusk/64/000000/javascript.png"/>
-                    <p>Javascript</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/dusk/64/000000/react.png"/>
-                    <p>React</p>
-                </div>
-                <div>
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/1199/1199129.svg"></img>
-                    <p>MySql</p>
-                </div>
-                <div>
-                    <img src="https://www.shareicon.net/data/512x512/2016/06/19/603784_nodejs_512x512.png"></img>
-                    <p>Node</p>
-                </div>
-                <div>
-                    <img src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/3556671901536211770-512.png"></img>
-                    <p>Cypress</p>
-                </div>
-                
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>Node</p>
+                <p>Mysql</p>
+                <p>React</p>
+                <p>Cypress</p>
+                <p>Figma</p>
             </div>
 
             <button><i class="fas fa-download"></i>Descargar CV</button>
