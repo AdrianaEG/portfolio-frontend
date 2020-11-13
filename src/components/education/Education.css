@@ -62,7 +62,8 @@
 
 .card-education .description-education{
     color: #000000;
-    background: wheat;
+    background: #f5dada;
+    /*opacity: 65%;*/
     /* font-weight: bold; */
     line-height: 1.4rem;
     border-radius: 5px;

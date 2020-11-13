@@ -41,6 +41,15 @@
     margin: 10px;
     border-radius: 8px;
     padding: 5px;
+    color: #000000;
+    background: #f5dada;
+    /* opacity: 65%; */
+    /* font-weight: bold; */
+    line-height: 1.4rem;
+    border-radius: 5px;
+    padding: 10px 5px;
+    box-shadow: 5px 5px 12px -4px black;
+    margin: 15px;
 }
 
 .card-project .link-project{
