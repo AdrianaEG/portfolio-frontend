@@ -23,7 +23,7 @@ function Projects (){
                     <div className="card-project">
                         <img src={project.image} alt="imagen del proyecto"/>
                         <h3>{project.name}</h3>
-                        <p>{project.descripcion}</p>
+                        <p>{project.description}</p>
                         <div className="link-project">
                             <a href={project.demo} target="_blank"> Ver demo </a>
                             <img src="https://www.flaticon.com/svg/static/icons/svg/2909/2909653.svg" className="icon" alt="projects"></img>
