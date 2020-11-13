@@ -1,44 +1,51 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+
 import './Index.css';
+
 function Index(){
+    const [information, setInformation] = useState({});
+    useEffect(()=>{
+        axios.get('https://backendportfolio-adri.herokuapp.com/index')
+        .then(
+            res => setInformation(res.data[0])
+        )
+    }, [setInformation])
     return(
         <div className="card" id="index">
             <div className="title-image">
-                <img src="https://avatars0.githubusercontent.com/u/45184284?s=460&u=9071a18c4b8368e15581a3287eab0e551aab3af6&v=4" alt="imagen de perfil" className="img-profile"></img>
+                <img src={information.photo} className="img-profile"></img>
                 <h1 className="title">Hello World!</h1>
             </div>
             <div className="description">
                 <div className="line"></div>
                 <div className="datos">
-                    <h3 className="name">Adriana Elizabeth Gonzalez</h3>
-                    <h5 className="job">Desarrolladora Web Full Stack</h5>
+                    <h3 className="name">{information.name}</h3>
+                    <h5 className="job">{information.job}</h5>
                     <div className="location">
                         <img src="https://www.flaticon.com/svg/static/icons/svg/3732/3732142.svg" alt="icono ubicación"></img>
-                        <p>San Luis, Argentina</p>
+                        <p>{information.location}</p>
                     </div>
                 </div>
             </div>
             
             <div className="skills">
-                <p>HTML5</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-                <p>Node</p>
-                <p>Mysql</p>
-                <p>React</p>
-                <p>Cypress</p>
-                <p>Figma</p>
+            
+                {information.skills && information.skills.map((skill, index)=>
+                    <p>{skill}</p>
+                )}
+                
             </div>
 
             <button><i class="fas fa-download"></i>Descargar CV</button>
             
             <div className="redes">
                 <div>
-                    <a href="https://github.com/AdrianaEG">Ver perfil en GitHub</a>
+                    <a href={information.github} target="_blank">Ver perfil en GitHub</a>
                     <img src="https://img.icons8.com/dusk/64/000000/github.png"/>
                 </div>
                 <div>
-                    <a href="https://github.com/AdrianaEG">Ver perfil en Linkedin</a>
+                    <a href={information.linkedin} target="_blank">Ver perfil en Linkedin</a>
                     <img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/>
                 </div>
             </div>
