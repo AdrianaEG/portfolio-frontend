@@ -23,7 +23,7 @@ body{
 
 .main{
     position: relative;
-    margin-left: 4rem;
+    margin-left: 3.8rem;
     width: 70%;
 }
 
@@ -34,4 +34,11 @@ body{
     border-radius: 35px;
     border: solid 2px #f8f7f5;
     width: 100%;
+}
+
+@media (min-width: 700px){
+    .main{
+        width: 84vw;
+        margin-left: 8vw;
+    }
 }

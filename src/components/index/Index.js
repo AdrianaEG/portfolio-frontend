@@ -15,8 +15,24 @@ function Index(){
         <div className="card" id="index">
             <div className="title-image">
                 <img src={information.photo} className="img-profile"></img>
+                <div>
                 <h1 className="title">Hello World!</h1>
+                <div className="description-desktop">
+                <div className="line"></div>
+                <div className="datos">
+                    <h3 className="name">{information.name}</h3>
+                    <h5 className="job">{information.job}</h5>
+                    <div className="location">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3732/3732142.svg" alt="icono ubicación"></img>
+                        <p>{information.location}</p>
+                    </div>
+                </div>
             </div>
+
+                </div>
+                
+            </div>
+            
             <div className="description">
                 <div className="line"></div>
                 <div className="datos">
@@ -28,6 +44,8 @@ function Index(){
                     </div>
                 </div>
             </div>
+
+            
             
             <div className="skills">
             

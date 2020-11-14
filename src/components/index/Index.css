@@ -96,3 +96,93 @@ button i{
 .redes div img{
     width: 1.5rem;
 }
+
+.about-me-mob{
+    display: none;
+}
+
+.title-image div .description-desktop{
+    display: none;
+}
+
+@media(min-width:426px){
+    .about-me-mob{
+        display: block;
+        background-color: #cdcdcd;
+        padding: 30px 15px;
+        border-radius: 10px;
+        box-shadow: 5px -5px 22px -15px #fdb2b7;
+        max-width: 400px;
+    }
+
+    .title-image{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-image img{
+        width: 35%;
+        max-width: 230px;
+    }
+
+    .title-image div{
+        margin-left: 5%;
+    }
+
+    .title-image div .description-desktop{
+        display: flex;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .job{
+        line-height: 1rem;
+        margin: 0;
+    }
+
+    .location{
+        line-height: 1rem;
+    }
+
+    .location img{
+        width: 15% !important;
+
+    }
+
+    .name{
+        margin: 0 0 10px;
+    }
+
+}
+
+@media(min-width:768px){
+    .title{
+        font-size: 3rem;
+    }
+    .description-desktop .line{
+        height: auto;
+    }
+
+    .description-desktop .datos .name{
+        font-size: 1.4rem;
+    }
+
+    .description-desktop .datos .job, .description-desktop .datos .location p{
+        font-size: 1rem;
+    }
+
+    .skills p{
+        font-size: 1.1rem;
+    }
+
+    button{
+        font-size: 1.4rem;
+    }
+
+    .redes div a{
+        font-size: 1.1rem;
+    }
+
+}
