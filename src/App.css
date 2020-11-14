@@ -30,7 +30,7 @@ body{
 .card{
     background: #323239;
     padding: 30px;
-    margin: 5px 0;
+    margin: 10px 0 20px;
     border-radius: 35px;
     border: solid 2px #f8f7f5;
     width: 100%;
