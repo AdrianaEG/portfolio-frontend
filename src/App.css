@@ -5,6 +5,9 @@ Letras grises: #57585d
 Letras blancas: #f8f7f5
 Linea gris: #747579
 */
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{

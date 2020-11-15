@@ -14,23 +14,29 @@ function Index(){
     return(
         <div className="card" id="index">
             <div className="title-image">
-                <img src={information.photo} className="img-profile"></img>
+                <img src="https://i.ibb.co/3WcLgK1/Dise-o-sin-t-tulo-1.gif" className="img-profile"></img>
                 <div>
-                <h1 className="title">Hello World!</h1>
-                <div className="description-desktop">
-                <div className="line"></div>
-                <div className="datos">
-                    <h3 className="name">{information.name}</h3>
-                    <h5 className="job">{information.job}</h5>
-                    <div className="location">
-                        <img src="https://www.flaticon.com/svg/static/icons/svg/3732/3732142.svg" alt="icono ubicación"></img>
-                        <p>{information.location}</p>
-                    </div>
-                </div>
-            </div>
+                    <div className="description-desktop">
+                        <div className="line"></div>
+                        <div className="datos">
+                            <h3 className="name">{information.name}</h3>
+                            <h5 className="job">{information.job}</h5>
+                            <div className="location">
+                                <img src="https://www.flaticon.com/svg/static/icons/svg/3732/3732142.svg" alt="icono ubicación"></img>
+                                <p>{information.location}</p>
+                            </div>
+                            <div className="skills">
+                            
+                                {information.skills && information.skills.map((skill, index)=>
+                                <p>{skill}</p>
+                                )}
+                            
+                            </div>
 
-                </div>
-                
+                        </div>
+                    </div>
+
+                </div>   
             </div>
             
             <div className="description">
@@ -47,7 +53,7 @@ function Index(){
 
             
             
-            <div className="skills">
+            <div className="skills oculto-desktop">
             
                 {information.skills && information.skills.map((skill, index)=>
                     <p>{skill}</p>

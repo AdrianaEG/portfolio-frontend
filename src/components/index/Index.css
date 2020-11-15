@@ -1,8 +1,7 @@
 
 
 .img-profile{
-    border-radius: 100%;
-    width: 35vw;
+    width: 75vw;
 }
 
 .title-image{
@@ -69,12 +68,17 @@
 button{
     border: solid #f8f7f5;
     background: #fdb2b7;
-    border-radius: 100px;
+    /*border-radius: 100px;*/
     padding: 10px 30px;
     display: block;
     margin: 1rem auto;
     font-weight: bold;
     font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    border: solid #000000;
 }
 
 button i{
@@ -89,7 +93,7 @@ button i{
 }
 
 .redes div a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #f8f7f5;
     margin: 0 5px;
     background: radial-gradient(black, transparent);
@@ -108,6 +112,10 @@ button i{
 }
 
 @media(min-width:426px){
+    .oculto-desktop{
+        display: none;
+    }
+
     .about-me-mob{
         display: block;
         background-color: #cdcdcd;
@@ -123,12 +131,12 @@ button i{
     }
 
     .title-image img{
-        width: 35%;
-        max-width: 230px;
+        width: 40%;
+        /*max-width: 230px;*/
     }
 
     .title-image div{
-        margin-left: 5%;
+        /*margin-left: 5%;*/
     }
 
     .title-image div .description-desktop{
@@ -149,7 +157,7 @@ button i{
     }
 
     .location img{
-        width: 15% !important;
+        width: 4% !important;
 
     }
 
@@ -191,11 +199,15 @@ button i{
         font-size: 1.1rem;
     }
 
+    .name{
+        font-size: 1.8rem;
+    }
+
 }
 
 @media(min-width:1024px){
     #index{
-        height: 85vh;
+        /*height: 85vh;*/
         justify-content: center;
         align-items: center;
         display: flex;
