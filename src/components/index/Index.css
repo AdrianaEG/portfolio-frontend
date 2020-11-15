@@ -55,6 +55,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 745px;
+    margin: 3% auto;
 }
 
 .skills p{
@@ -189,4 +191,14 @@ button i{
         font-size: 1.1rem;
     }
 
+}
+
+@media(min-width:1024px){
+    #index{
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
