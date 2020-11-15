@@ -18,7 +18,7 @@
     /*border: solid #f8f7f5 0.1rem;*/
     border-radius: 15px;
     box-shadow: 5px -5px 22px -15px #f8f7f5;
-    margin: 5px 0 20px;
+    margin: 5px 0 30px;
     padding-bottom: 5px;
 }
 
@@ -72,14 +72,14 @@
 
 @media(min-width:426px){
     .card-project{
-        margin: 5px 2%;
+        margin: 5px 2% 30px;
         width: 45%;
     }
 }
 
 @media(min-width: 768px){
     .card-project{
-        margin: 5px 2%;
+        margin: 5px 2% 30px;
         width: 28%;
         max-width: 340px;
     }

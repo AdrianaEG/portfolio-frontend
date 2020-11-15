@@ -79,6 +79,7 @@ button{
 
 button:hover{
     border: solid #000000;
+    transition: 0.3s;
 }
 
 button i{
@@ -97,6 +98,11 @@ button i{
     color: #f8f7f5;
     margin: 0 5px;
     background: radial-gradient(black, transparent);
+}
+
+.redes div a:hover{
+    background: black;
+    transition: 0.3s;
 }
 
 .redes div img{
