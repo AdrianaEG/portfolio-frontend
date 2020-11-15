@@ -78,3 +78,20 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media(min-width:768px){
+    .card-education{
+        width: 45%;
+        box-sizing: border-box;
+        margin: 5px 2%;
+    }
+}
+
+@media(min-width:1024px){
+    .card-education{
+        width: 28%;
+        box-sizing: border-box;
+        margin: 5px 2%;
+        max-width: 340px;
+    }
+}
