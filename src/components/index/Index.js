@@ -2,15 +2,28 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import './Index.css';
+import Loguito from '../Loguito';
 
 function Index(){
     const [information, setInformation] = useState({});
+    const [loading, setLoading] = useState(false);
+
+    const informationFunction = async()=>{
+        try{
+            const data = await axios
+            .get('https://backendportfolio-adri.herokuapp.com/index')
+            .then(res=>{
+                setInformation(res.data[0])
+            });
+            setLoading(true)
+        } catch(e){
+            console.log(e)
+        }
+    };
     useEffect(()=>{
-        axios.get('https://backendportfolio-adri.herokuapp.com/index')
-        .then(
-            res => setInformation(res.data[0])
-        )
-    }, [setInformation])
+        informationFunction();
+    }, [])
+   
     return(
         <div className="card" id="index">
             <div className="title-image">
@@ -18,7 +31,7 @@ function Index(){
                 <div>
                     <div className="description-desktop">
                         <div className="line"></div>
-                        <div className="datos">
+                        {loading ? <div className="datos">
                             <h3 className="name">{information.name}</h3>
                             <h5 className="job">{information.job}</h5>
                             <div className="location">
@@ -34,13 +47,18 @@ function Index(){
                             </div>
 
                         </div>
-                    </div>
+                        : (
+                            <Loguito />
+                        )}
+                   </div>
 
                 </div>   
             </div>
             
+            
             <div className="description">
-                <div className="line"></div>
+            {loading ? <div className="description-mobile">
+            <div className="line"></div>
                 <div className="datos">
                     <h3 className="name">{information.name}</h3>
                     <h5 className="job">{information.job}</h5>
@@ -49,6 +67,9 @@ function Index(){
                         <p>{information.location}</p>
                     </div>
                 </div>
+                </div>
+            : <Loguito />}
+                
             </div>
 
             
@@ -73,6 +94,8 @@ function Index(){
                     <img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/>
                 </div>
             </div>
+            
+
         </div>
     )
 }

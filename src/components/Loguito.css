@@ -1,0 +1,10 @@
+.content-loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-loading img{
+    width: 50%;
+}

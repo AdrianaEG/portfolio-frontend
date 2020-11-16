@@ -117,6 +117,10 @@ button i{
     display: none;
 }
 
+.description-mobile{
+    display: flex;
+}
+
 @media(min-width:426px){
     .oculto-desktop{
         display: none;

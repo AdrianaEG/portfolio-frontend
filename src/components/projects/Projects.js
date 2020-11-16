@@ -2,23 +2,35 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import './Projects.css';
+import Loguito from '../Loguito';
 
 function Projects (){
     const [projects, setProjects] = useState({});
+    const [loading, setLoading] = useState(false);
+
+    const projectsFunction = async()=>{
+        try{
+            const data = await axios
+            .get('https://backendportfolio-adri.herokuapp.com/projects')
+            .then(res=>{
+                setProjects(res.data)
+            });
+            setLoading(true)
+        } catch(e){
+            console.log(e)
+        }
+    };
     useEffect(()=>{
-        axios.get('https://backendportfolio-adri.herokuapp.com/projects')
-        .then(
-            res => setProjects(res.data)
-        )
-    }, [setProjects])
+        projectsFunction();
+    }, [])
+
     return(
         <div className="card" id="projects">
             <div className="content-title">
                 <h1 className="title">Mis Proyectos</h1>
                 <img src="https://www.flaticon.com/svg/static/icons/svg/2909/2909653.svg" className="icon" alt="projects"></img>
             </div>
-            
-            <div className="content-projects">
+            {loading ?             <div className="content-projects">
                 {projects.length && projects.map((project, index)=>
                     <div className="card-project">
                         <img src={project.image} alt="imagen del proyecto"/>
@@ -36,7 +48,10 @@ function Projects (){
                 )}
       
             </div>
+ 
             
+            : <Loguito />}
+           
         </div>
     )
 }
