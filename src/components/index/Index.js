@@ -27,7 +27,7 @@ function Index(){
     return(
         <div className="card" id="index">
             <div className="title-image">
-                <img src="https://i.ibb.co/3WcLgK1/Dise-o-sin-t-tulo-1.gif" className="img-profile"></img>
+                <img src="https://i.ibb.co/5R8GMvJ/Dise-o-sin-t-tulo-1.gif" className="img-profile" alt="Foto de perfil"></img>
                 <div>
                     <div className="description-desktop">
                         <div className="line"></div>
@@ -41,7 +41,7 @@ function Index(){
                             <div className="skills">
                             
                                 {information.skills && information.skills.map((skill, index)=>
-                                <p>{skill}</p>
+                                <p key={index}>{skill}</p>
                                 )}
                             
                             </div>
@@ -77,21 +77,21 @@ function Index(){
             <div className="skills oculto-desktop">
             
                 {information.skills && information.skills.map((skill, index)=>
-                    <p>{skill}</p>
+                    <p key={index}>{skill}</p>
                 )}
                 
             </div>
 
-            <button><i class="fas fa-download"></i>Descargar CV</button>
+            <button><a href="https://drive.google.com/file/d/1vNRXVmuidmuwU5pApOvgcbw9ZwVegnsM/view?usp=sharing" target="_blank" rel="noopener" download><i className="fas fa-download"></i>Descargar CV</a></button>
             
             <div className="redes">
                 <div>
-                    <a href={information.github} target="_blank">Ver perfil en GitHub</a>
-                    <img src="https://img.icons8.com/dusk/64/000000/github.png"/>
+                    <a href={information.github} target="_blank" rel="noopener">Ver perfil en GitHub</a>
+                    <img src="https://img.icons8.com/dusk/64/000000/github.png" alt="Ir a Github"/>
                 </div>
                 <div>
-                    <a href={information.linkedin} target="_blank">Ver perfil en Linkedin</a>
-                    <img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/>
+                    <a href={information.linkedin} target="_blank" rel="noopener">Ver perfil en Linkedin</a>
+                    <img src="https://img.icons8.com/dusk/64/000000/linkedin.png" alt="Ir a Linkedin"/>
                 </div>
             </div>
             

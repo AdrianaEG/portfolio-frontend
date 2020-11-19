@@ -1,14 +1,14 @@
 /*
-FONDO: #323239
-Rosita: #fdb2b7
-Letras grises: #57585d
-Letras blancas: #f8f7f5
-Linea gris: #747579
+#323239
+#fdb2b7
+#57585d
+#f8f7f5
+#747579
 */
+
 html{
     scroll-behavior: smooth;
 }
-
 
 body{
     margin: 0;
@@ -44,29 +44,28 @@ body::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
 
-
 .content{
     display: flex;
     flex-direction: row;
 }
 
-.main{
+.content .main{
     position: relative;
     margin-left: 3.8rem;
     width: 70%;
 }
 
-.card{
+.content .main .card{
     background: #323239;
     padding: 30px;
     margin: 10px 0 20px;
-    border-radius: 35px;
-    border: solid 2px #f8f7f5;
+    border-radius: 15px;
+    border: solid 0.5px #f8f7f5;
     width: 100%;
 }
 
 @media (min-width: 426px){
-    .main{
+    .content .main{
         width: 84vw;
         margin-left: 8vw;
     }

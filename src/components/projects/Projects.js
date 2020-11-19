@@ -32,17 +32,17 @@ function Projects (){
             </div>
             {loading ?             <div className="content-projects">
                 {projects.length && projects.map((project, index)=>
-                    <div className="card-project">
+                    <div className="card-project"  key={ `${index}` }>
                         <img src={project.image} alt="imagen del proyecto"/>
                         <h3>{project.name}</h3>
                         <p>{project.description}</p>
                         <div className="link-project">
-                            <a href={project.demo} target="_blank"> Ver demo </a>
+                            <a href={project.demo} target="_blank" rel="noopener"> Ver demo </a>
                             <img src="https://www.flaticon.com/svg/static/icons/svg/2909/2909653.svg" className="icon" alt="projects"></img>
                         </div>
                         <div className="link-project">
-                            <a href={project.code} target="_blank"> Ver código en Github </a>
-                            <img className="icon" src="https://img.icons8.com/dusk/64/000000/github.png"/>
+                            <a href={project.code} target="_blank" rel="noopener"> Ver código en Github </a>
+                            <img className="icon" src="https://img.icons8.com/dusk/64/000000/github.png" alt="Icono de Github"/>
                         </div>
                     </div>
                 )}

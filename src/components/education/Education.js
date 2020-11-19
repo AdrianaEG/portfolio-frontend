@@ -32,7 +32,7 @@ function Education() {
             </div>
         { loading ? <div className="content-education">
                 {education.length && education.map((edu, index)=>
-                    <div className="card-education">
+                    <div className="card-education" key={ `${index}`}>
                         <div className="content-title-img">
                             <div>
                                 <h2>{edu.title}</h2>
